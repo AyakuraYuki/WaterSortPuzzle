@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0870FE82E41E0BD00C7C430 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0870FD42E41E0BD00C7C430 /* AppDelegate.swift */; };
+		D0870FE92E41E0BD00C7C430 /* GameBottle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0870FD72E41E0BD00C7C430 /* GameBottle.swift */; };
+		D0870FEA2E41E0BD00C7C430 /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0870FD82E41E0BD00C7C430 /* GameEngine.swift */; };
+		D0870FEB2E41E0BD00C7C430 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0870FD92E41E0BD00C7C430 /* GameManager.swift */; };
+		D0870FEC2E41E0BD00C7C430 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0870FDB2E41E0BD00C7C430 /* GameScene.swift */; };
+		D0870FED2E41E0BD00C7C430 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0870FDC2E41E0BD00C7C430 /* GameViewController.swift */; };
+		D0870FEE2E41E0BD00C7C430 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0870FDF2E41E0BD00C7C430 /* Level.swift */; };
+		D0870FEF2E41E0BD00C7C430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0870FD52E41E0BD00C7C430 /* Assets.xcassets */; };
+		D0870FF02E41E0BD00C7C430 /* fail.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0870FD62E41E0BD00C7C430 /* fail.wav */; };
+		D0870FF12E41E0BD00C7C430 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D0870FDA2E41E0BD00C7C430 /* GameScene.sks */; };
+		D0870FF22E41E0BD00C7C430 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0870FDE2E41E0BD00C7C430 /* LaunchScreen.storyboard */; };
+		D0870FF32E41E0BD00C7C430 /* levels.json in Resources */ = {isa = PBXBuildFile; fileRef = D0870FE02E41E0BD00C7C430 /* levels.json */; };
+		D0870FF42E41E0BD00C7C430 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0870FE22E41E0BD00C7C430 /* Main.storyboard */; };
+		D0870FF52E41E0BD00C7C430 /* pour.sks in Resources */ = {isa = PBXBuildFile; fileRef = D0870FE32E41E0BD00C7C430 /* pour.sks */; };
+		D0870FF62E41E0BD00C7C430 /* pour.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0870FE42E41E0BD00C7C430 /* pour.wav */; };
+		D0870FF72E41E0BD00C7C430 /* select.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0870FE52E41E0BD00C7C430 /* select.wav */; };
+		D0870FF82E41E0BD00C7C430 /* victory.wav in Resources */ = {isa = PBXBuildFile; fileRef = D0870FE62E41E0BD00C7C430 /* victory.wav */; };
+		D0870FFF2E41E0C800C7C430 /* WaterSortPuzzleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0870FFC2E41E0C800C7C430 /* WaterSortPuzzleUITests.swift */; };
+		D08710002E41E0C800C7C430 /* WaterSortPuzzleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0870FFD2E41E0C800C7C430 /* WaterSortPuzzleUITestsLaunchTests.swift */; };
+		D08710022E41E92600C7C430 /* LevelGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08710012E41E92200C7C430 /* LevelGenerator.swift */; };
+		D08710082E41EFBF00C7C430 /* WaterSortPuzzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08710062E41EFBF00C7C430 /* WaterSortPuzzleTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0870F9F2E41A45700C7C430 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0870F7D2E41A45600C7C430 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0870F842E41A45600C7C430;
+			remoteInfo = WaterSortPuzzle;
+		};
+		D0870FA92E41A45700C7C430 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0870F7D2E41A45600C7C430 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0870F842E41A45600C7C430;
+			remoteInfo = WaterSortPuzzle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D0870F852E41A45600C7C430 /* WaterSortPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterSortPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0870F9E2E41A45700C7C430 /* WaterSortPuzzleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterSortPuzzleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0870FA82E41A45700C7C430 /* WaterSortPuzzleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterSortPuzzleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0870FD42E41E0BD00C7C430 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0870FD52E41E0BD00C7C430 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0870FD62E41E0BD00C7C430 /* fail.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fail.wav; sourceTree = "<group>"; };
+		D0870FD72E41E0BD00C7C430 /* GameBottle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBottle.swift; sourceTree = "<group>"; };
+		D0870FD82E41E0BD00C7C430 /* GameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
+		D0870FD92E41E0BD00C7C430 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		D0870FDA2E41E0BD00C7C430 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		D0870FDB2E41E0BD00C7C430 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		D0870FDC2E41E0BD00C7C430 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D0870FDD2E41E0BD00C7C430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0870FDF2E41E0BD00C7C430 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		D0870FE02E41E0BD00C7C430 /* levels.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = levels.json; sourceTree = "<group>"; };
+		D0870FE12E41E0BD00C7C430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0870FE32E41E0BD00C7C430 /* pour.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = pour.sks; sourceTree = "<group>"; };
+		D0870FE42E41E0BD00C7C430 /* pour.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pour.wav; sourceTree = "<group>"; };
+		D0870FE52E41E0BD00C7C430 /* select.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = select.wav; sourceTree = "<group>"; };
+		D0870FE62E41E0BD00C7C430 /* victory.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = victory.wav; sourceTree = "<group>"; };
+		D0870FFC2E41E0C800C7C430 /* WaterSortPuzzleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterSortPuzzleUITests.swift; sourceTree = "<group>"; };
+		D0870FFD2E41E0C800C7C430 /* WaterSortPuzzleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterSortPuzzleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D08710012E41E92200C7C430 /* LevelGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelGenerator.swift; sourceTree = "<group>"; };
+		D08710062E41EFBF00C7C430 /* WaterSortPuzzleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterSortPuzzleTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0870F822E41A45600C7C430 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0870F9B2E41A45700C7C430 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0870FA52E41A45700C7C430 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0870F7C2E41A45600C7C430 = {
+			isa = PBXGroup;
+			children = (
+				D0870F862E41A45600C7C430 /* Products */,
+				D0870FE72E41E0BD00C7C430 /* WaterSortPuzzle */,
+				D08710072E41EFBF00C7C430 /* WaterSortPuzzleTests */,
+				D0870FFE2E41E0C800C7C430 /* WaterSortPuzzleUITests */,
+			);
+			sourceTree = "<group>";
+		};
+		D0870F862E41A45600C7C430 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0870F852E41A45600C7C430 /* WaterSortPuzzle.app */,
+				D0870F9E2E41A45700C7C430 /* WaterSortPuzzleTests.xctest */,
+				D0870FA82E41A45700C7C430 /* WaterSortPuzzleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0870FE72E41E0BD00C7C430 /* WaterSortPuzzle */ = {
+			isa = PBXGroup;
+			children = (
+				D0870FD42E41E0BD00C7C430 /* AppDelegate.swift */,
+				D0870FDA2E41E0BD00C7C430 /* GameScene.sks */,
+				D0870FDB2E41E0BD00C7C430 /* GameScene.swift */,
+				D0870FDC2E41E0BD00C7C430 /* GameViewController.swift */,
+				D0870FDF2E41E0BD00C7C430 /* Level.swift */,
+				D08710012E41E92200C7C430 /* LevelGenerator.swift */,
+				D0870FD92E41E0BD00C7C430 /* GameManager.swift */,
+				D0870FD72E41E0BD00C7C430 /* GameBottle.swift */,
+				D0870FD82E41E0BD00C7C430 /* GameEngine.swift */,
+				D0870FD52E41E0BD00C7C430 /* Assets.xcassets */,
+				D0870FE22E41E0BD00C7C430 /* Main.storyboard */,
+				D0870FDE2E41E0BD00C7C430 /* LaunchScreen.storyboard */,
+				D0870FE32E41E0BD00C7C430 /* pour.sks */,
+				D0870FE02E41E0BD00C7C430 /* levels.json */,
+				D0870FD62E41E0BD00C7C430 /* fail.wav */,
+				D0870FE42E41E0BD00C7C430 /* pour.wav */,
+				D0870FE52E41E0BD00C7C430 /* select.wav */,
+				D0870FE62E41E0BD00C7C430 /* victory.wav */,
+			);
+			path = WaterSortPuzzle;
+			sourceTree = "<group>";
+		};
+		D0870FFE2E41E0C800C7C430 /* WaterSortPuzzleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D0870FFC2E41E0C800C7C430 /* WaterSortPuzzleUITests.swift */,
+				D0870FFD2E41E0C800C7C430 /* WaterSortPuzzleUITestsLaunchTests.swift */,
+			);
+			path = WaterSortPuzzleUITests;
+			sourceTree = "<group>";
+		};
+		D08710072E41EFBF00C7C430 /* WaterSortPuzzleTests */ = {
+			isa = PBXGroup;
+			children = (
+				D08710062E41EFBF00C7C430 /* WaterSortPuzzleTests.swift */,
+			);
+			path = WaterSortPuzzleTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0870F842E41A45600C7C430 /* WaterSortPuzzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0870FB22E41A45700C7C430 /* Build configuration list for PBXNativeTarget "WaterSortPuzzle" */;
+			buildPhases = (
+				D0870F812E41A45600C7C430 /* Sources */,
+				D0870F822E41A45600C7C430 /* Frameworks */,
+				D0870F832E41A45600C7C430 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaterSortPuzzle;
+			packageProductDependencies = (
+			);
+			productName = WaterSortPuzzle;
+			productReference = D0870F852E41A45600C7C430 /* WaterSortPuzzle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0870F9D2E41A45700C7C430 /* WaterSortPuzzleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0870FB52E41A45700C7C430 /* Build configuration list for PBXNativeTarget "WaterSortPuzzleTests" */;
+			buildPhases = (
+				D0870F9A2E41A45700C7C430 /* Sources */,
+				D0870F9B2E41A45700C7C430 /* Frameworks */,
+				D0870F9C2E41A45700C7C430 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0870FA02E41A45700C7C430 /* PBXTargetDependency */,
+			);
+			name = WaterSortPuzzleTests;
+			packageProductDependencies = (
+			);
+			productName = WaterSortPuzzleTests;
+			productReference = D0870F9E2E41A45700C7C430 /* WaterSortPuzzleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D0870FA72E41A45700C7C430 /* WaterSortPuzzleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0870FB82E41A45700C7C430 /* Build configuration list for PBXNativeTarget "WaterSortPuzzleUITests" */;
+			buildPhases = (
+				D0870FA42E41A45700C7C430 /* Sources */,
+				D0870FA52E41A45700C7C430 /* Frameworks */,
+				D0870FA62E41A45700C7C430 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0870FAA2E41A45700C7C430 /* PBXTargetDependency */,
+			);
+			name = WaterSortPuzzleUITests;
+			packageProductDependencies = (
+			);
+			productName = WaterSortPuzzleUITests;
+			productReference = D0870FA82E41A45700C7C430 /* WaterSortPuzzleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0870F7D2E41A45600C7C430 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					D0870F842E41A45600C7C430 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					D0870F9D2E41A45700C7C430 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = D0870F842E41A45600C7C430;
+					};
+					D0870FA72E41A45700C7C430 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = D0870F842E41A45600C7C430;
+					};
+				};
+			};
+			buildConfigurationList = D0870F802E41A45600C7C430 /* Build configuration list for PBXProject "WaterSortPuzzle" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0870F7C2E41A45600C7C430;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D0870F862E41A45600C7C430 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0870F842E41A45600C7C430 /* WaterSortPuzzle */,
+				D0870F9D2E41A45700C7C430 /* WaterSortPuzzleTests */,
+				D0870FA72E41A45700C7C430 /* WaterSortPuzzleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0870F832E41A45600C7C430 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0870FEF2E41E0BD00C7C430 /* Assets.xcassets in Resources */,
+				D0870FF02E41E0BD00C7C430 /* fail.wav in Resources */,
+				D0870FF12E41E0BD00C7C430 /* GameScene.sks in Resources */,
+				D0870FF22E41E0BD00C7C430 /* LaunchScreen.storyboard in Resources */,
+				D0870FF32E41E0BD00C7C430 /* levels.json in Resources */,
+				D0870FF42E41E0BD00C7C430 /* Main.storyboard in Resources */,
+				D0870FF52E41E0BD00C7C430 /* pour.sks in Resources */,
+				D0870FF62E41E0BD00C7C430 /* pour.wav in Resources */,
+				D0870FF72E41E0BD00C7C430 /* select.wav in Resources */,
+				D0870FF82E41E0BD00C7C430 /* victory.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0870F9C2E41A45700C7C430 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0870FA62E41A45700C7C430 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0870F812E41A45600C7C430 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0870FE82E41E0BD00C7C430 /* AppDelegate.swift in Sources */,
+				D0870FE92E41E0BD00C7C430 /* GameBottle.swift in Sources */,
+				D0870FEA2E41E0BD00C7C430 /* GameEngine.swift in Sources */,
+				D0870FEB2E41E0BD00C7C430 /* GameManager.swift in Sources */,
+				D0870FEC2E41E0BD00C7C430 /* GameScene.swift in Sources */,
+				D0870FED2E41E0BD00C7C430 /* GameViewController.swift in Sources */,
+				D08710022E41E92600C7C430 /* LevelGenerator.swift in Sources */,
+				D0870FEE2E41E0BD00C7C430 /* Level.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0870F9A2E41A45700C7C430 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D08710082E41EFBF00C7C430 /* WaterSortPuzzleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0870FA42E41A45700C7C430 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0870FFF2E41E0C800C7C430 /* WaterSortPuzzleUITests.swift in Sources */,
+				D08710002E41E0C800C7C430 /* WaterSortPuzzleUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0870FA02E41A45700C7C430 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0870F842E41A45600C7C430 /* WaterSortPuzzle */;
+			targetProxy = D0870F9F2E41A45700C7C430 /* PBXContainerItemProxy */;
+		};
+		D0870FAA2E41A45700C7C430 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0870F842E41A45600C7C430 /* WaterSortPuzzle */;
+			targetProxy = D0870FA92E41A45700C7C430 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0870FDE2E41E0BD00C7C430 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0870FDD2E41E0BD00C7C430 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D0870FE22E41E0BD00C7C430 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0870FE12E41E0BD00C7C430 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0870FB02E41A45700C7C430 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = BYG57HTPAY;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D0870FB12E41A45700C7C430 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BYG57HTPAY;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0870FB32E41A45700C7C430 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BYG57HTPAY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.board-games";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.ayakurayuki.WaterSortPuzzle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0870FB42E41A45700C7C430 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BYG57HTPAY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.board-games";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.ayakurayuki.WaterSortPuzzle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D0870FB62E41A45700C7C430 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BYG57HTPAY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.ayakurayuki.WaterSortPuzzleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaterSortPuzzle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WaterSortPuzzle";
+			};
+			name = Debug;
+		};
+		D0870FB72E41A45700C7C430 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BYG57HTPAY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.ayakurayuki.WaterSortPuzzleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaterSortPuzzle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WaterSortPuzzle";
+			};
+			name = Release;
+		};
+		D0870FB92E41A45700C7C430 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BYG57HTPAY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.ayakurayuki.WaterSortPuzzleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WaterSortPuzzle;
+			};
+			name = Debug;
+		};
+		D0870FBA2E41A45700C7C430 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BYG57HTPAY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.ayakurayuki.WaterSortPuzzleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WaterSortPuzzle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0870F802E41A45600C7C430 /* Build configuration list for PBXProject "WaterSortPuzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0870FB02E41A45700C7C430 /* Debug */,
+				D0870FB12E41A45700C7C430 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0870FB22E41A45700C7C430 /* Build configuration list for PBXNativeTarget "WaterSortPuzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0870FB32E41A45700C7C430 /* Debug */,
+				D0870FB42E41A45700C7C430 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0870FB52E41A45700C7C430 /* Build configuration list for PBXNativeTarget "WaterSortPuzzleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0870FB62E41A45700C7C430 /* Debug */,
+				D0870FB72E41A45700C7C430 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0870FB82E41A45700C7C430 /* Build configuration list for PBXNativeTarget "WaterSortPuzzleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0870FB92E41A45700C7C430 /* Debug */,
+				D0870FBA2E41A45700C7C430 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0870F7D2E41A45600C7C430 /* Project object */;
+}
