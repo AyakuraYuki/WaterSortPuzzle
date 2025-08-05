@@ -33,7 +33,9 @@ class GameEngine {
         // reset scene
         bottles = [:]
         stack = []
-        currentLevel = lvl
+        if lvl >= 0 {
+            currentLevel = lvl
+        }
         scene.boardNode?.removeAllChildren()
 
         // init level

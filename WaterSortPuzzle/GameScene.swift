@@ -10,6 +10,7 @@ import SpriteKit
 
 class GameScene: SKScene {
     var boardNode: SKNode?
+    var forwardNode: SKLabelNode?
     var levelNode: SKLabelNode?
     var autoNode: SKLabelNode?
     var engine: GameEngine?
@@ -18,6 +19,7 @@ class GameScene: SKScene {
 
     override func didMove(to view: SKView) {
         self.boardNode = self.childNode(withName: "board")
+        self.forwardNode = self.childNode(withName: "top")?.childNode(withName: "forward") as? SKLabelNode
         self.levelNode = self.childNode(withName: "top")?.childNode(withName: "level") as? SKLabelNode
         self.autoNode = self.childNode(withName: "bottom")?.childNode(withName: "auto") as? SKLabelNode
         self.engine = GameEngine(with: self)
@@ -96,6 +98,15 @@ class GameScene: SKScene {
         }
         
         // TODO: 点击level进入生成模式
+        if node.name == "level" {
+            self.fg.impactOccurred()
+            self.fg.prepare()
+            self.engine?.genMode = !(self.engine?.genMode ?? true)
+            self.engine?.startLevel(lvl: -1)
+            self.levelNode?.text = "Level ♾️"
+            self.forwardNode?.isHidden = true
+            return
+        }
         
         let nodes = self.nodes(at: pos)
         
@@ -108,6 +119,11 @@ class GameScene: SKScene {
     }
     
     func nextLevel() {
+        if self.engine?.genMode ?? false {
+            self.engine?.startLevel(lvl: self.lvl)
+            return
+        }
+        
         self.lvl += 1
         if self.lvl >= GameManager.shared.levels.count {
             self.lvl = 0
@@ -121,6 +137,12 @@ class GameScene: SKScene {
     }
     
     private func prevLevel() {
+        if self.engine?.genMode ?? false {
+            // exit gen mode
+            self.forwardNode?.isHidden = false
+            self.engine?.genMode = false
+        }
+        
         self.lvl -= 1
         if self.lvl < 0 {
             self.lvl = GameManager.shared.levels.count - 1

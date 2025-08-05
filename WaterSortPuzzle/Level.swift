@@ -7,7 +7,7 @@
 
 class Bottle: Decodable {
     let id: Int
-    let blocks: [String]
+    var blocks: [String]
 
     init(id: Int, blocks: [String]) {
         self.id = id
