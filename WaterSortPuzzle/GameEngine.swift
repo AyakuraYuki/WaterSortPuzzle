@@ -24,12 +24,13 @@ class GameEngine {
     private var currentLevel = 0
     private var bottles: [Int: GameBottle] = [:]
     private var stack: [Move] = []
+    private var storedLevel: Level?
 
     init(with scene: GameScene) {
         self.scene = scene
     }
 
-    func startLevel(lvl: Int) {
+    func startLevel(lvl: Int, reset: Bool = false) {
         // reset scene
         bottles = [:]
         stack = []
@@ -41,7 +42,8 @@ class GameEngine {
         // init level
         let level: Level
         if genMode {
-            level = LevelGenerator.generateLevel()
+            level = (reset ? storedLevel : nil) ?? LevelGenerator.generateLevel()
+            storedLevel = level
         } else {
             level = GameManager.shared.levels[lvl]
         }

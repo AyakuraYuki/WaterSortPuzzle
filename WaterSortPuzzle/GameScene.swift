@@ -79,7 +79,7 @@ class GameScene: SKScene {
         if node.name == "reset" {
             self.fg.impactOccurred()
             self.fg.prepare()
-            self.engine?.startLevel(lvl: self.lvl)
+            self.engine?.startLevel(lvl: self.lvl, reset: true)
             return
         }
         
