@@ -141,11 +141,12 @@ class GameScene: SKScene {
             // exit gen mode
             self.forwardNode?.isHidden = false
             self.engine?.genMode = false
-        }
-        
-        self.lvl -= 1
-        if self.lvl < 0 {
-            self.lvl = GameManager.shared.levels.count - 1
+        } else {
+            // previous level
+            self.lvl -= 1
+            if self.lvl < 0 {
+                self.lvl = GameManager.shared.levels.count - 1
+            }
         }
 
         UserDefaults.standard.set(self.lvl, forKey: "last_level")
